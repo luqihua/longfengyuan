@@ -1,0 +1,28 @@
+.islider-dot-wrap {
+    width: 80%;
+    height: 10%;
+    margin: 0px auto;
+    position: absolute;
+    padding: 0px;
+    left: 0px;
+    top:63%;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10000;
+    text-align: center;
+}
+.islider-dot {
+    position: relative;
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    list-style-type: none;
+    margin: 5px;
+    background-color: #dfdfdf;
+}
+
+.islider-dot.active {
+    background-color: rgba(34,131,255,.8);
+}

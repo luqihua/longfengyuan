@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="lib/jquery/jquery-3.1.0.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="css/bottom-nav.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+<!--头部-->
+
+<section class="container head">
+    <p class="title">用户中心</p>
+    <button type="button" class="btn btn-default btn-lg back">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-lg more">
+        <span class="glyphicon glyphicon-list"></span>
+    </button>
+</section>
+
+<section class="container box">
+    <div class="slider" id="slider">
+        <!--图片-->
+        <ul class="banner" id="banner">
+            <!--<li><img src="img/a.jpg"></li>-->
+            <!--<li><img src="img/b.jpg"></li>-->
+            <!--<li><img src="img/c.jpg"></li>-->
+            <!--<li><img src="img/d.jpg"></li>-->
+        </ul>
+        <!--圆点-->
+        <div class="circle" id="circle">
+            <!--<span></span>-->
+        </div>
+        <span class="to-left" id="left"> < </span>
+        <span class="to-right" id="right"> > </span>
+
+        <script>
+            var imgList = [
+                "轮播/img/a.jpg",
+                "轮播/img/b.jpg",
+                "轮播/img/c.jpg",
+                "轮播/img/d.jpg"
+            ];
+            var slider = document.getElementById("slider");
+            var itemWidth = slider.offsetWidth;
+            console.log(itemWidth);
+            var banner = slider.children[0];
+            var circle = slider.children[1];
+            for (var i = 0; i < imgList.length; i++) {
+                /*添加图片*/
+                var li = document.createElement("li");
+                var img = document.createElement("img");
+
+                li.style.width = itemWidth + "px";
+                img.src = imgList[i];
+                li.appendChild(img);
+                banner.appendChild(li);
+                /*添加圆点*/
+                var span = document.createElement("span");
+                span.innerHTML = i + 1;
+                span.index = i;
+                if (i == 0)span.style.backgroundColor = "RGBA(255, 0, 0, 0.6)";
+                circle.appendChild(span);
+            }
+            banner.style.width = imgList.length * itemWidth + "px";
+            circle.style.left = itemWidth / 2 - circle.offsetWidth / 2 + "px";
+
+        </script>
+    </div>
+    <div class="all">
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+        查看全部商品
+        <span class="glyphicon glyphicon-chevron-right more"></span>
+    </div>
+    <div class="content" id="content">
+
+        <div class="item">
+            <p>黄金</p>
+            <div><a href="#"><img src="img/a.jpg" alt=""></a></div>
+        </div>
+        <div class="item">
+            <p>白银</p>
+            <div><a href="#"><img src="img/a.jpg" alt=""></a></div>
+        </div>
+        <div class="item">
+            <p>钻石</p>
+            <div><a href="#"><img src="img/a.jpg" alt=""></a></div>
+        </div>
+        <div class="item">
+            <p>珠宝</p>
+            <div><a href="#"><img src="img/a.jpg" alt=""></a></div>
+        </div>
+
+    </div>
+    <script>
+        var content = document.getElementById("content");
+        var dds = content.getElementsByTagName("img");
+        var width = dds[0].offsetWidth;
+        for (var i = 0; i < dds.length; i++) {
+            dds[i].style.height = width + "px";
+        }
+    </script>
+</section>
+<!--底部导航-->
+<section class="bottom_nav">
+    <ul class="container row">
+        <li class="col-xs-3" style="color: #285e8e">
+            <img src="img/icon_home_on.png" alt="" class="bottom_icon"><br>首页
+        </li>
+        <li class="col-xs-3">
+            <img src="img/icon_list.png" alt="" class="bottom_icon"><br>全部分类
+        </li>
+        <li class="col-xs-3">
+            <img src="img/icon_cart.png" alt="" class="bottom_icon"><br>购物车
+        </li>
+        <li class="col-xs-3">
+            <img src="img/icon_user.png" alt="" class="bottom_icon"><br>个人中心
+        </li>
+    </ul>
+</section>
+</body>
+</html>

@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/*---基础配置----*/
+html, body, ul, li, ol, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+/*-------公共样式-------*/
+body {
+    background-color: #F7F7F7;
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+.item {
+    background-color: #fff;
+}
+
+div.item + div.item {
+    margin-top: 5px;
+}
+/*----头部样式---*/
+.head {
+    height: 50px;
+    background-color: #1B1C20;
+    text-align: center;
+    position: relative;
+}
+
+.head .title {
+    height: 50px;
+    color: #fff;
+    font: 400 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+
+.head button {
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1B1C20;
+    border: none;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.head .back {
+    left: 20px;
+    top: 0;
+}
+
+.head .more {
+    right: 20px;
+    top: 0;
+}
+/*----头部样式---*/
+#header {
+    height: 50px;
+    background-color: #1B1C20;
+    text-align: center;
+    position: relative;
+}
+
+#header p.title {
+    height: 50px;
+    color: #fff;
+    font: 400 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+
+#header button {
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1B1C20;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header #header_back {
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+#header #more {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+/*----内容部分----*/
+/*----内容区域-----*/
+
+.product {
+    width: 100%;
+    margin: 10px auto 0;
+    height: 120px;
+}
+
+/*-----产品图片-----*/
+.product-img {
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+.product-img img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+/*-----产品信息------*/
+
+.product-info {
+    padding: 10px;
+    height: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+/*---商品名称---*/
+.product-info > p:nth-child(1) {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+    overflow: hidden; /** 隐藏超出的内容 **/
+    color: #000;
+    height: 50px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.product-info > p:nth-child(2) {
+    margin-top: 5px;
+    color: #777;
+    height: 20px;
+    padding-left: 5px;
+    display: -webkit-box;
+}
+
+.product-info > p:nth-child(3) {
+    margin-top: 5px;
+    color: red;
+    padding-left: 5px;
+    display: -webkit-box;
+    height: 20px;
+}
+
+/*--按钮部分--*/
+
+.bottom-module {
+    height: 50px;
+}
+
+.bottom-module > div {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+div.set-num {
+    margin-top: 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+
+div.set-num span {
+    background-color: #888;
+    width: 30px;
+    height: 30px;
+    top: 2px;
+    line-height: 30px;
+    color: #fff;
+}
+
+div.set-num span:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+div.set-num span:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+input.num {
+    display: inline-block;
+    width: 50px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    text-align: center;
+}
+
+/*--删除按钮---*/
+.btn-delete {
+    width: 80%;
+    color: #fff;
+    background-color: #285e8e;
+    border-radius: 2px;
+    margin-top: 10px;
+    border: 0;
+    padding: 3px 30px;
+    font: 400 16px/24px "微软雅黑";
+}

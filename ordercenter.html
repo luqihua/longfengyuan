@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单中心</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <link rel="stylesheet" href="css/ordercenter.css">
+
+    <script src="lib/jquery/jquery-3.1.0.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".item:nth-child(1)").css("border-bottom", "2px solid #285e8e");
+            $(".item").click(function () {
+                $(this).css("border-bottom", "2px solid #285e8e");
+                $(this).siblings(".item").css("border-bottom", "0");
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+<section class="container">
+    <div class="row clearfix" id="top_nav">
+        <div class="col-xs-4 item">
+            首页
+        </div>
+        <div class="col-xs-4 item">
+            全部分类
+        </div>
+        <div class="col-xs-4 item">
+            购物车
+        </div>
+    </div>
+</section>
+</body>
+</html>

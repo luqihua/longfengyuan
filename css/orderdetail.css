@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/*---基础配置----*/
+html, body, ul, li, ol, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+/*-------公共样式-------*/
+body {
+    background-color: #F7F7F7;
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+/*----头部样式---*/
+#header {
+    height: 50px;
+    background-color: #1B1C20;
+    text-align: center;
+    position: relative;
+}
+
+#header p.title {
+    height: 50px;
+    color: #fff;
+    font: 400 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+
+#header button {
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1B1C20;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header #header_back {
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+#header #more {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+/*-----订单详情页-----*/
+
+#content {
+    padding: 5px;
+}
+
+.item {
+    height: 100%;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.item > p {
+    padding-left: 10px;
+}
+
+.product-list {
+    width: 100%;
+    padding: 5px;
+    background-color: #f7f7f7;
+}
+
+.product {
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.product > img {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+.product > p {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+    overflow: hidden; /** 隐藏超出的内容 **/
+}
+
+.product-num {
+    display: inline-block;
+    float: right;
+}
+
+/*-----订单信息-----*/
+
+.info-box {
+    background-color: #fff;
+    border-top: 3px solid #f7f7f7;
+}
+
+.order-info {
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+.order-total {
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.total-price {
+    display: inline-block;
+    float: right;
+    color: red;
+}
+
+.bottom-nav {
+    padding: 0 5px;
+    text-align: right;
+    line-height: 30px;
+}
+
+.bottom-nav > button {
+    margin-right: 5px;
+    background-color: #285e8e;
+    color: #fff;
+    border: 0;
+    font-size: 14px;
+    border-radius: 2px;
+}
+

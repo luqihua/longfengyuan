@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*---基础配置----*/
+html, body, ul, li, ol, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*-------公共样式-------*/
+body {
+    background-color: #F7F7F7;
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+    margin-bottom: 100px;
+}
+
+/*----头部样式---*/
+.head {
+    height: 50px;
+    background-color: #1B1C20;
+    text-align: center;
+    position: relative;
+}
+
+.head .title {
+    height: 50px;
+    color: #fff;
+    font: 400 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+
+.head button {
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1B1C20;
+    border: none;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.head .back {
+    left: 20px;
+    top: 0;
+}
+
+.head .more {
+    right: 20px;
+    top: 0;
+}
+
+/*----------会员中心---------*/
+
+.user-center {
+    height: 50px;
+    position: relative;
+}
+
+.user-center .back {
+    line-height: 50px;
+    text-align: center;
+    color: #666;
+    background-color: #F7F7F7;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.user-center .title {
+    height: 50px;
+    color: #222;
+    font: 400 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+
+/*--------导航图标-----------*/
+
+.content_nav {
+    background-color: #fff;
+}
+
+.content_nav .row {
+    height: 72px;
+    border-top: 1px solid #ccc;
+}
+
+.top-row .icon {
+    height: 100%;
+    text-align: center;
+    padding-top: 5px;
+    font: 400 16px/32px "微软雅黑";
+}
+
+.top-row li + li {
+    border-left: 1px solid #ccc;
+}
+
+.top-row img {
+    width: 30px;
+    height: 30px;
+}
+
+/*--------列表样式--------*/
+.content_list {
+    margin-top: 20px;
+    background-color: #F7F7F7;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content_list > .list-group {
+    margin-bottom: 10px;
+}
+
+.content_list li:hover {
+    background-color: #ddd;
+}
+
+.content_list span.content_list_arrow {
+    display: block;
+    float: right;
+    color: #C8C8CD;
+}

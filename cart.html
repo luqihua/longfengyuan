@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link rel="stylesheet" href="css/bottom-nav.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <script src="lib/jquery/jquery-3.1.0.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+
+</head>
+<body>
+
+<!--头部-->
+
+<section class="container head">
+    <p class="title">购物车</p>
+    <button type="button" class="btn btn-default btn-lg back">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-lg more">
+        <span class="glyphicon glyphicon-list"></span>
+    </button>
+</section>
+
+<section class="container">
+    <!--商品信息-->
+    <div class="item">
+        <div class="product clearfix">
+            <div class="product-img">
+                <img id="product_img" src="img/product_img.jpg" alt="">
+            </div>
+            <div class="product-info">
+                <p class="p-name" id="">阿卡蕾丝绣花春季新款收腰显瘦中长袖爱好是大氨基酸的垃圾死得啦技术的海上大号是大神的</p>
+                <p class="p-style">hello world</p>
+                <p class="p-price">单价：￥290/件</p>
+            </div>
+        </div>
+        <!--提交按钮-->
+
+        <div class="bottom-module">
+            <div>
+                <div class="set-num">
+                    <span class="glyphicon glyphicon-minus btn-change"></span><input class="num" type="number"><span
+                        class="glyphicon glyphicon-plus btn-change"></span>
+                </div>
+            </div>
+            <div>
+                <button class="btn-delete">删除</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--底部导航-->
+<section class="bottom_nav">
+    <ul class="container row">
+        <li class="col-xs-3">
+            <img src="img/icon_home.png" alt="" class="bottom_icon"><br>首页
+        </li>
+        <li class="col-xs-3">
+            <img src="img/icon_list.png" alt="" class="bottom_icon"><br>全部分类
+        </li>
+        <li class="col-xs-3" style="color: #285e8e;">
+            <img src="img/icon_cart_on.png" alt="" class="bottom_icon"><br>购物车
+        </li>
+        <li class="col-xs-3">
+            <img src="img/icon_user.png" alt="" class="bottom_icon"><br>个人中心
+        </li>
+    </ul>
+</section>
+</body>
+</html>

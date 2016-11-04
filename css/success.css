@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*---基础配置----*/
+html, body, ul, li, ol, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+/*-------公共样式-------*/
+body {
+    background-color: #F7F7F7;
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+.item {
+    background-color: #fff;
+}
+
+div.item + div {
+    margin-top: 5px;
+}
+
+/*----头部样式---*/
+#header {
+    height: 50px;
+    background-color: #1B1C20;
+    text-align: center;
+    position: relative;
+}
+
+#header p.title {
+    height: 50px;
+    color: #fff;
+    font: 400 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+
+#header button {
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1B1C20;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header #header_back {
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+#header #more {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+/*----内容区域-----*/
+div.dialog {
+    width: 80%;
+    position: fixed;
+    left: 10%;
+    top: 30%;
+    margin-top: -50px;
+}
+
+.dialog > div {
+    text-align: center;
+}
+
+.dialog > div:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.dialog > div:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.dialog > div > a {
+    text-decoration: none;
+}

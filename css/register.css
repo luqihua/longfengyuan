@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*---基础配置----*/
+html, body, ul, li, ol, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: "微软雅黑";
+    background-color: #f7f7f7;
+}
+
+/*----------头部----------*/
+
+#header {
+    height: 50px;
+    background-color: #1B1C20;
+    text-align: center;
+    position: relative;
+}
+
+#header p.title {
+    height: 50px;
+    color: #fff;
+    font: 400 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+
+#header button {
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1B1C20;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header #header_back {
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+/*-----内容区域-----*/
+#content {
+    margin-top: 40px;
+
+}
+
+#form > div.input {
+    margin-top: 30px;
+}
+
+/*-------用户名和密码---------*/
+
+#form .input_text {
+    display: block;
+    width: 20%;
+    text-align: center;
+    float: left;
+    font: 400 16px/34px "微软雅黑";
+}
+
+#form .input_edit {
+    float: left;
+    width: 75%;
+}
+
+/*-------验证码--------*/
+
+#form .input_yzm_edit {
+    float: left;
+    width: 40%;
+}
+
+#identify {
+    display: block;
+    height: 34px;
+    margin-left: 10px;
+}
+
+/*-------提交--------*/
+
+#form div.bottom {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#confirm {
+    width: 100%;
+    background-color: #285e8e;
+    color: #fff;
+}
+
+

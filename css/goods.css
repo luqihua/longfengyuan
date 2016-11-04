@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*---基础配置----*/
+html, body, ul, li, ol, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*-------公共样式-------*/
+body {
+    background-color: #F7F7F7;
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+.item {
+    background-color: #fff;
+}
+
+div.item + div.item {
+    margin-top: 5px;
+}
+
+.line {
+    height: 1px;
+    margin: 0 10px;
+    background-color: #ccc;
+}
+
+/*----头部样式---*/
+.head {
+    height: 50px;
+    background-color: #1B1C20;
+    text-align: center;
+    position: relative;
+}
+
+.head .title {
+    height: 50px;
+    color: #fff;
+    font: 400 20px/50px "Microsoft YaHei UI";
+    text-align: center;
+}
+
+.head button {
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #1B1C20;
+    border: none;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.head .back {
+    left: 20px;
+    top: 0;
+}
+
+.head .more {
+    right: 20px;
+    top: 0;
+}
+
+/*----内容区域-----*/
+
+.box {
+    margin: 5px auto;
+    padding: 0;
+
+}
+
+.item {
+    margin: 0 5px;
+}
+
+.product {
+    width: 100%;
+    height: 120px;
+}
+
+/*-----产品图片-----*/
+.product-img {
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+.product-img img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+/*-----产品信息------*/
+
+.product-info {
+    padding: 10px;
+    height: 100%;
+}
+
+/*---商品名称---*/
+.product-info > p:nth-child(1) {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+    overflow: hidden; /** 隐藏超出的内容 **/
+    color: #000;
+    height: 50px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.product-info > p:nth-child(2) {
+    margin-top: 5px;
+    color: #777;
+    height: 20px;
+    padding-left: 5px;
+    display: -webkit-box;
+}
+
+.product-info > p:nth-child(3) {
+    margin-top: 5px;
+    color: red;
+    padding-left: 5px;
+    display: -webkit-box;
+    height: 20px;
+}
+
+/*----提交按钮----*/
+
+div.btn-group {
+    padding: 10px;
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+div.bottom-btn > button {
+    background-color: #285e8e;
+    color: #fff;
+    height: 34px;
+    width: 40%;
+    border-radius: 4px;
+    border: none;
+}
+
+/*---------分页指示器----------*/
+.page-indicator {
+    text-align: center;
+    padding: 10px 0 62px 0;
+}
+
+.page-indicator button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.page-indicator > span {
+    margin: 0 5px;
+}

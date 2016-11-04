@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <link href="css/islider.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #iSlider {
+            position: absolute;
+            width: 100%;
+            height:62.5%;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body>
+<div id="iSlider"></div>
+<script type="text/javascript" src="js/iSlider.js"></script>
+<script>
+    var list = [
+        {
+            'content': '<div><a href="#"><img style="width:100%;height:100%;position:absolute" alt="" src="../img/a.jpg"></a></div>'
+        },
+        {
+            'content': '<div><a href="#"><img style="width:100%;height:100%;position:absolute" alt="" src="img/b.jpg"></a></div>'
+        }, {
+            'content': '<div><a href="#"><img style="width:100%;height:100%;position:absolute" alt="" src="img/c.jpg"></a></div>'
+        }];
+    var islider = new iSlider({
+        data: list,
+        type: 'dom',
+        dom: document.getElementById("iSlider"),
+        duration: 1000,
+        isLooping: true,
+        isAutoPlay: true,
+        fixPage: true
+    });
+    islider.addDot();
+</script>
+</body>
+</html>
