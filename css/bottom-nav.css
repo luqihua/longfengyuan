@@ -20,9 +20,11 @@
     line-height: 26px;
 }
 
-/*.bottom_nav li:first-child {*/
-    /*color: #585e8e;*/
-/*}*/
+.bottom_nav a{
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
 
 .bottom_nav img {
     width: 20px;
